@@ -121,9 +121,9 @@ def effective_ind(a, diam_nm, n_slab, d_nm, W):
     n_target = 1.44
     n_diff = n_target - n_eff[:,ind]
 
-    zero_crossings = np.where(np.diff(np.sign(n_diff)))
-    cross_wvln = float(wvln[zero_crossings, ind])
-    cross_wvlns = np.append(cross_wvlns, cross_wvln)
+    #zero_crossings = np.where(np.diff(np.sign(n_diff)))
+    #cross_wvln = float(wvln[zero_crossings, ind])
+    #cross_wvlns = np.append(cross_wvlns, cross_wvln)
     
     wvln_target = 1518.37
     wvln_ind = wvln[:,ind]    #wvln for the mode in question
